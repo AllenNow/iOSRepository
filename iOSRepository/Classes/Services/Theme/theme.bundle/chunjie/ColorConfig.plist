@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>labelFC</key>
+	<string>125,12,24</string>
+	<key>buttonColor</key>
+	<string>123,14,212</string>
+</dict>
+</plist>

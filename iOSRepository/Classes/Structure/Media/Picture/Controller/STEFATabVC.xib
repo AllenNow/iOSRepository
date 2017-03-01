@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="STEFATabVC">
+            <connections>
+                <outlet property="imageView" destination="JPn-NC-my2" id="6vw-zC-NDq"/>
+                <outlet property="imageView1" destination="hjN-mD-UTP" id="fZ1-Qb-Ssq"/>
+                <outlet property="switchBtn" destination="RR2-Cy-PkD" id="zxd-tn-1Xt"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fengjing.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="JPn-NC-my2">
+                    <rect key="frame" x="16" y="121" width="343" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="QfD-SQ-DJD"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fengjing.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="hjN-mD-UTP">
+                    <rect key="frame" x="16" y="346" width="343" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="Udj-Ke-POC"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ToolBar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cft-rC-tVM">
+                    <rect key="frame" x="-69" y="0.0" width="59" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="RR2-Cy-PkD">
+                    <rect key="frame" x="296" y="80" width="51" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="49" id="TeS-fO-LaX"/>
+                        <constraint firstAttribute="height" constant="31" id="wW9-ZB-lSz"/>
+                    </constraints>
+                </switch>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EffectView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ePH-if-ucr">
+                    <rect key="frame" x="16" y="90" width="100" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="Gyc-W0-cWm"/>
+                        <constraint firstAttribute="height" constant="21" id="KHx-O4-Dfu"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ToolBar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xNv-4M-AqD">
+                    <rect key="frame" x="16" y="323" width="75" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="0c9-Ax-gMS"/>
+                        <constraint firstAttribute="width" constant="75" id="RhJ-Va-MPH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ePH-if-ucr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="90" id="3RY-wW-tMW"/>
+                <constraint firstAttribute="trailing" secondItem="hjN-mD-UTP" secondAttribute="trailing" constant="16" id="6GZ-4F-ycu"/>
+                <constraint firstItem="hjN-mD-UTP" firstAttribute="top" secondItem="JPn-NC-my2" secondAttribute="bottom" constant="25" id="9yd-Vn-G4R"/>
+                <constraint firstItem="JPn-NC-my2" firstAttribute="top" secondItem="RR2-Cy-PkD" secondAttribute="bottom" constant="10" id="FAW-rP-KuM"/>
+                <constraint firstItem="JPn-NC-my2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="Of3-Ds-fpl"/>
+                <constraint firstItem="xNv-4M-AqD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="RYB-c9-dZh"/>
+                <constraint firstItem="ePH-if-ucr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="VhM-Pb-xV8"/>
+                <constraint firstAttribute="trailing" secondItem="JPn-NC-my2" secondAttribute="trailing" constant="16" id="aSJ-pI-e2n"/>
+                <constraint firstAttribute="trailing" secondItem="RR2-Cy-PkD" secondAttribute="trailing" constant="30" id="b1j-Er-Heq"/>
+                <constraint firstItem="hjN-mD-UTP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="fJ3-xs-ry7"/>
+                <constraint firstItem="RR2-Cy-PkD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="gtb-2k-XqU"/>
+                <constraint firstItem="xNv-4M-AqD" firstAttribute="top" secondItem="JPn-NC-my2" secondAttribute="bottom" constant="2" id="lW6-fm-IA1"/>
+            </constraints>
+            <point key="canvasLocation" x="34.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="fengjing.jpg" width="16" height="16"/>
+    </resources>
+</document>
